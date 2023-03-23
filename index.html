@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Hi There</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet" />
@@ -192,23 +192,23 @@
         Let's connect
       </div>
       <div class="m-8">
-        <form action="#" class="space-y-8 sm:mr-14 sm:mt-20">
+        <form action="#" class="space-y-8 sm:mr-14 sm:mt-20" name="contact" method="POST" data-netlify="true">
           <div>
             <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Your
               email</label>
-            <input type="email" id="email"
+            <input type="email" name="email" id="email"
               class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 bg-gray-50 rounded-sm shadow-sm border border-lime-200 focus:ring-lime-400 focus:border-lime-500 w-full p-2.5"
               placeholder="Your email" required>
           </div>
           <div class="sm:col-span-2">
             <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Your
               message</label>
-            <textarea id="message" rows="6"
+            <textarea id="message" name="message rows=" 6"
               class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-sm shadow-sm border border-lime-200 focus:ring-lime-400 focus:border-lime-500"
               placeholder="Leave a comment..."></textarea>
           </div>
           <button type="submit"
-            class="py-3 px-5 text-sm font-medium text-center text-gray-100 rounded-lg bg-lime-900 sm:w-fit hover:bg-lime-600 focus:ring-4 focus:outline-none focus:ring-lime-400">Send
+            class="py-3 px-5 text-sm font-medium text-center text-gray-100 bg-lime-900 sm:w-fit hover:bg-lime-600 focus:ring-4 focus:outline-none focus:ring-lime-400">Send
             message</button>
         </form>
       </div>
