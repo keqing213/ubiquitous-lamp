@@ -9,50 +9,71 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/scrollbar.css" />
 </head>
 
 <body>
   <!-- hero -->
-  <section id="hero" class="container mt-8 mb-10 max-h-fit pb-20 sm:mt-20">
-    <div class="flex flex-col sm:flex-row sm:justify-center">
-      <div class="mx-8 mb-6 sm:my-auto">
-        <img class="sm:max-w-sm" src="assets/img/me.webp" alt="perzson" />
+  <section id="hero" class="mx-8 py-2">
+    <div class="h-screen flex flex-col md:place-items-center md:grid md:grid-cols-2">
+      <div class="w-full py-8 md:px-20">
+        <img class="md:max-w-sm " src="assets/img/me.webp" alt="perzson" />
       </div>
-      <div class="my-auto">
-        <div class="mx-8 mb-2 font-semibold text-xl tracking-widest">
+      <div class="w-full py-auto md:py-0">
+        <div class="md:mb-2 font-semibold text-lg md:text-xl tracking-widest">
           Hi there, I'm
         </div>
-        <div class="mx-8 mb-2 font-serif font-bold text-3xl tracking-widest
-          text-black underline underline-offset-4 decoration-lime-900
-          decoration-4 ">
-          EVAN ARYANTO
+        <div class="mb-2 font-serif font-bold text-2xl md:text-3xl tracking-widest
+          text-black block">
+          <span class="link link-underline link-underline-black">EVAN ARYANTO</span>
+
         </div>
-        <div class="font-medium text-lg text-gray-800 tracking-wide mx-8">
+        <div class="font-medium text-md md:text-lg text-gray-800 tracking-wide">
           Network Engineer
         </div>
-        <div class="mx-8 text-gray-800 text-md font-light tracking-wide">
+        <div class="text-gray-800 text-sm md:text-base font-light tracking-wide">
           Fresh Graduate, majority in network engineering.
         </div>
         <div class="font-medium text-lg underline underline-offset-8
-        decoration-lime-900 mx-8">
-          <a href="#skill">More...</a>
+        decoration-lime-900">
+          <a href="#projects">More...</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- skills -->
-  <section id="skill" class="container min-h-screen pt-16">
-    <div class="mx-8 text-2xl font-serif font-semibold text-gray-900">
-      <span class="font-sans font-semibold text-lime-900 tracking-widest
-        text-lg">Skills</span><br />
+  <section id="skills" class="mx-8">
+    <div class="h-[20vh] text-xl md:text-3xl font-serif font-semibold text-gray-900 py-8">
+      <span class="font-sans font-semibold text-lime-900 tracking-widest text-base
+        md:text-xl">Skills</span><br />
       I'm best at what i do and <br> this is what i love doing
     </div>
-    <div class="flex flex-col mt-4 sm:flex-row sm:my-20 mx-8 gap-8">
-      <div>
-        <svg class="w-16 h-16" version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" fill="#000000">
+    <div class="flex flex-col md:grid md:grid-cols-3 gap-4 place-content-center h-[80vh] md:pb-8">
+      <div class="md:grid-cols-1">
+        <svg class="w-16 h-16 md:w-20 md:h-20" viewBox="0 0 1024 1024" class="icon" version="1.1"
+          xmlns="http://www.w3.org/2000/svg" fill="#000000">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M372.288 745.792a394.048 394.048 0 0 0 113.728 102.848v-127.744a390.08 390.08 0 0 0-113.728 24.896z m-51.584 24.192a392.96 392.96 0 0 0-60.16 41.6h-1.28a390.336 390.336 0 0 0 205.696 89.6 450.24 450.24 0 0 1-144.256-131.2z m-24.704-230.016c3.968 56.768 20.096 110.208 45.696 157.696a445.696 445.696 0 0 1 144.32-32.896v-124.8h-190.08z m-56.128 0H120.96a390.4 390.4 0 0 0 98.56 233.024c22.208-19.2 46.272-36.224 71.808-50.752a445.312 445.312 0 0 1-51.456-182.272z m445.824 158.784c25.984-47.808 42.24-101.568 46.336-158.72H540.992v124.864c51.072 3.2 99.776 14.976 144.704 33.92z m50.24 24.96c24.448 14.08 47.552 30.464 68.928 48.896a390.4 390.4 0 0 0 98.176-232.576h-114.88a445.312 445.312 0 0 1-52.224 183.68z m-194.944 125.44a394.048 394.048 0 0 0 113.92-102.4 389.888 389.888 0 0 0-113.92-25.728v128.192z m23.104 51.392a390.4 390.4 0 0 0 200.704-88.96h-0.512a392.96 392.96 0 0 0-57.92-40.32 450.24 450.24 0 0 1-142.272 129.28zM341.76 326.144a389.632 389.632 0 0 0-45.76 157.824h190.016V358.976a445.696 445.696 0 0 1-144.256-32.768z m-50.368-24.576a449.216 449.216 0 0 1-71.808-50.56 390.4 390.4 0 0 0-98.56 232.96h118.848a445.312 445.312 0 0 1 51.52-182.4z m194.56-126.208A394.048 394.048 0 0 0 372.48 278.016a390.08 390.08 0 0 0 113.536 24.768V175.36z m-20.992-52.544a390.272 390.272 0 0 0-205.312 89.152h0.512c18.88 15.872 39.168 29.888 60.608 41.92a450.24 450.24 0 0 1 144.192-131.072z m189.76 154.048a394.048 394.048 0 0 0-113.728-102.08v127.808a389.952 389.952 0 0 0 113.728-25.728z m51.392-24.576a392.96 392.96 0 0 0 57.856-40.32h0.384A390.336 390.336 0 0 0 564.16 123.52a450.24 450.24 0 0 1 141.952 128.832z m25.92 231.68a389.632 389.632 0 0 0-46.528-159.168 445.568 445.568 0 0 1-144.512 33.92v125.248h191.04z m56.128 0h114.88a390.4 390.4 0 0 0-98.56-232.96 449.28 449.28 0 0 1-68.736 48.896c29.824 55.424 48.32 117.76 52.416 184.128zM512 960A448 448 0 1 1 512 64a448 448 0 0 1 0 896z"
+              fill="#365314"></path>
+          </g>
+        </svg>
+        <div class="font-medium text-lg md:text-2xl my-2">
+          Networking
+        </div>
+        <div class="text-sm md:text-lg">
+          Encompass knowledge and proficiency in connecting, troubleshooting, securing, and utilizing mobile devices and
+          computer systems for optimal performance and productivity.
+        </div>
+      </div>
+      <div class="md:grid-cols-1">
+        <svg class="w-16 h-16 md:w-20 md:h-20" version="1.1" id="Uploaded to svgrepo.com"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32"
+          xml:space="preserve" fill="#000000">
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
           <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
           <g id="SVGRepo_iconCarrier">
@@ -68,37 +89,18 @@
           M20,27h-8v-4h8V27z"></path>
           </g>
         </svg>
-        <div class="font-medium text-xl my-2">
+        <div class="font-medium text-lg md:text-2xl my-2">
           Graphic Design
         </div>
-        <div class="text-md">
+        <div class="text-sm md:text-lg">
           Creating visual content that communicates a
           message or idea through the use of typography, color, composition, and other
           design elements.
         </div>
       </div>
-      <div>
-        <svg class="w-16 h-16" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
-          fill="#000000">
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-          <g id="SVGRepo_iconCarrier">
-            <path
-              d="M372.288 745.792a394.048 394.048 0 0 0 113.728 102.848v-127.744a390.08 390.08 0 0 0-113.728 24.896z m-51.584 24.192a392.96 392.96 0 0 0-60.16 41.6h-1.28a390.336 390.336 0 0 0 205.696 89.6 450.24 450.24 0 0 1-144.256-131.2z m-24.704-230.016c3.968 56.768 20.096 110.208 45.696 157.696a445.696 445.696 0 0 1 144.32-32.896v-124.8h-190.08z m-56.128 0H120.96a390.4 390.4 0 0 0 98.56 233.024c22.208-19.2 46.272-36.224 71.808-50.752a445.312 445.312 0 0 1-51.456-182.272z m445.824 158.784c25.984-47.808 42.24-101.568 46.336-158.72H540.992v124.864c51.072 3.2 99.776 14.976 144.704 33.92z m50.24 24.96c24.448 14.08 47.552 30.464 68.928 48.896a390.4 390.4 0 0 0 98.176-232.576h-114.88a445.312 445.312 0 0 1-52.224 183.68z m-194.944 125.44a394.048 394.048 0 0 0 113.92-102.4 389.888 389.888 0 0 0-113.92-25.728v128.192z m23.104 51.392a390.4 390.4 0 0 0 200.704-88.96h-0.512a392.96 392.96 0 0 0-57.92-40.32 450.24 450.24 0 0 1-142.272 129.28zM341.76 326.144a389.632 389.632 0 0 0-45.76 157.824h190.016V358.976a445.696 445.696 0 0 1-144.256-32.768z m-50.368-24.576a449.216 449.216 0 0 1-71.808-50.56 390.4 390.4 0 0 0-98.56 232.96h118.848a445.312 445.312 0 0 1 51.52-182.4z m194.56-126.208A394.048 394.048 0 0 0 372.48 278.016a390.08 390.08 0 0 0 113.536 24.768V175.36z m-20.992-52.544a390.272 390.272 0 0 0-205.312 89.152h0.512c18.88 15.872 39.168 29.888 60.608 41.92a450.24 450.24 0 0 1 144.192-131.072z m189.76 154.048a394.048 394.048 0 0 0-113.728-102.08v127.808a389.952 389.952 0 0 0 113.728-25.728z m51.392-24.576a392.96 392.96 0 0 0 57.856-40.32h0.384A390.336 390.336 0 0 0 564.16 123.52a450.24 450.24 0 0 1 141.952 128.832z m25.92 231.68a389.632 389.632 0 0 0-46.528-159.168 445.568 445.568 0 0 1-144.512 33.92v125.248h191.04z m56.128 0h114.88a390.4 390.4 0 0 0-98.56-232.96 449.28 449.28 0 0 1-68.736 48.896c29.824 55.424 48.32 117.76 52.416 184.128zM512 960A448 448 0 1 1 512 64a448 448 0 0 1 0 896z"
-              fill="#365314"></path>
-          </g>
-        </svg>
-        <div class="font-medium text-xl my-2">
-          Networking
-        </div>
-        <div class="text-md">
-          Encompass knowledge and proficiency in connecting, troubleshooting, securing, and utilizing mobile devices and
-          computer systems for optimal performance and productivity.
-        </div>
-      </div>
-      <div>
-        <svg class="w-16 h-16" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
-          fill="#000000">
+      <div class="md:grid-cols-1">
+        <svg class="w-16 h-16 md:w-20 md:h-20" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg" fill="#000000">
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
           <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
           <g id="SVGRepo_iconCarrier">
@@ -121,10 +123,10 @@
             <line class="cls-1" x1="3.41" y1="3.41" x2="3.41" y2="5.32"></line>
           </g>
         </svg>
-        <div class="font-medium text-xl my-2">
+        <div class="font-medium text-lg md:text-2xl my-2">
           Photography
         </div>
-        <div class="text-md">
+        <div class="text-sm md:text-lg">
           Ability to compose and capture high-quality images using a smartphone camera, while also mastering editing and
           post-processing techniques for maximum impact.
         </div>
@@ -132,66 +134,78 @@
     </div>
   </section>
 
-  <!-- gallery -->
-  <section id="gallery" class="container min-h-screen pt-16">
-    <div class="mx-8">
-      <div>
-        <div class="text-2xl mb-4 font-serif font-semibold text-gray-900">
-          <span class="font-sans font-semibold text-lime-900 tracking-widest
-            text-lg">Gallery</span><br />
-          This is what i took every moment
+  <!-- projects -->
+  <section id="projects" class="mx-8">
+    <div class="md:h-[20vh] py-8 md:py-0 text-xl md:text-3xl font-serif font-semibold text-gray-900">
+      <span class="font-sans font-semibold text-lime-900 tracking-widest text-base
+        md:text-xl">Projects</span><br />
+      An Overview of My Project.
+    </div>
+    <div class="flex flex-col md:grid md:grid-cols-3 w-full md:h-[80vh] md:mx-8">
+      <div class="md:col-span-1">
+        <div
+          class="transition duration-500 ease-in-out max-w-sm rounded-sm overflow-hidden transform hover:shadow-xl hover:-translate-y-1 hover:-translate-x-1 hover:scale-105">
+          <img class="w-full" src="assets/img/error.png" alt="Sunset in the mountains">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+              perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-4">
+            <button type=""
+              class="py-2 px-4 text-sm font-medium text-center text-gray-100 bg-lime-900 sm:w-fit hover:bg-lime-600 focus:ring-4 focus:outline-none focus:ring-lime-400">More</button>
+          </div>
         </div>
       </div>
-      <div class="flex flex-col gap-5 sm:flex-row">
-        <div>
-          <img src="assets/img/1.webp" alt="sunset" width="1500">
-        </div>
-        <div>
-          <img src="assets/img/1bw.png" alt="sunset" width="1500">
-        </div>
-        <div>
-          <img src="assets/img/2.webp" alt="sunset" width="1500">
-        </div>
-        <div>
-          <img src="assets/img/2bw.png" alt="sunset" width="1500">
-        </div>
-      </div>
-      <div class="flex flex-col gap-5 mt-5 hidden sm:flex-row sm:flex" id="image-container">
-        <div>
-          <img src="assets/img/3bw.png" alt="sunset" width="1500">
-        </div>
-        <div>
-          <img src="assets/img/3.png" alt="sunset" width="1500">
-        </div>
-        <div>
-          <img src="assets/img/4bw.png" alt="sunset" width="1500">
-        </div>
-        <div>
-          <img src="assets/img/4.webp" alt="sunset" width="1500">
+      <div class="md:col-span-1">
+        <div
+          class="transition duration-500 ease-in-out max-w-sm rounded-sm overflow-hidden transform hover:shadow-xl hover:-translate-y-1 hover:-translate-x-1 hover:scale-105">
+          <img class="w-full" src="assets/img/error.png" alt="Sunset in the mountains">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">The Serene landscapes</div>
+            <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+              perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-4">
+            <button type=""
+              class="py-2 px-4 text-sm font-medium text-center text-gray-100 bg-lime-900 sm:w-fit hover:bg-lime-600 focus:ring-4 focus:outline-none focus:ring-lime-400">More</button>
+          </div>
         </div>
       </div>
-
-      <div class="mt-4 sm:hidden">
-        <button id="load-more-btn"
-          class="inline-block bg-lime-900 px-6 pt-2.5 pb-2 text-xs font-medium tracking-widest uppercase leading-normal text-white  transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700">Load
-          More</button>
-        <button id="load-less-btn"
-          class="inline-block bg-lime-900 px-6 pt-2.5 pb-2 text-xs font-medium tracking-widest uppercase leading-normal text-white  transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 hidden">Load
-          Less</button>
+      <div class="md:col-span-1">
+        <div
+          class="transition duration-500 ease-in-out max-w-sm rounded-sm overflow-hidden transform hover:shadow-xl hover:-translate-y-1 hover:-translate-x-1 hover:scale-105">
+          <img class="w-full" src="assets/img/error.png" alt="Sunset in the mountains">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">The Majestic waterfalls</div>
+            <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
+              perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-4">
+            <button type=""
+              class="py-2 px-4 text-sm font-medium text-center text-gray-100 bg-lime-900 sm:w-fit hover:bg-lime-600 focus:ring-4 focus:outline-none focus:ring-lime-400">More</button>
+          </div>
+        </div>
       </div>
-
     </div>
   </section>
 
-  <section class="mt-8 mb-12" id="contact">
-    <div class="flex flex-col sm:grid sm:grid-cols-2 ">
-      <div class="mx-8 pt-20 text-2xl sm:text-3xl font-serif font-semibold text-gray-900 sm:mt-28">
-        <span class="font-sans font-semibold text-lime-900 tracking-widest
-          text-md sm:text-xl">Contact</span><br />
+  <!-- contact -->
+  <section id="" class="mx-8">
+    <div class="pb-20 md:grid md:grid-cols-2 md:place-content-center md:h-[80vh] ">
+      <div class="col-span-1 py-8 md:py-16 text-xl md:text-3xl font-serif font-semibold text-gray-900">
+        <span class="font-sans font-semibold text-lime-900 tracking-widest text-base
+          md:text-xl">Contact</span><br />
         Let's connect
       </div>
-      <div class="m-8">
-        <form action="#" class="space-y-8 sm:mr-14 sm:mt-20" name="contact" method="POST" data-netlify="true">
+      <div class="md:col-span-1">
+        <form action="#" class="space-y-8" name="contact" method="POST" data-netlify="true">
           <div>
             <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Your
               email</label>
@@ -214,36 +228,18 @@
     </div>
   </section>
 
-
   <footer class=" bg-lime-900 rounded-sm text-center shadow m-4">
     <div class="w-full mx-auto container md:p-6 p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-gray-100 sm:text-center">© 2023 <a href="" class="hover:underline">Keqing.codes</a>. All
+      <span class="text-sm text-gray-100 md:text-center">© 2023 <a href="" class="hover:underline">Keqing.codes</a>. All
         Rights Reserved.
       </span><br>
-      <span class="text-sm text-gray-100 sm:text-center font-mono">Handcrafted by Evan
+      <span class="text-sm text-gray-100 md:text-center font-mono">Handcrafted by Evan
       </span>
     </div>
   </footer>
 
-  <!-- js inline ajah -->
+  <!-- js -->
 
-  <script>
-    const imageContainer = document.getElementById('image-container');
-    const loadMoreBtn = document.getElementById('load-more-btn');
-    const loadLessBtn = document.getElementById('load-less-btn');
-
-    loadMoreBtn.addEventListener('click', function () {
-      imageContainer.classList.remove('hidden');
-      loadMoreBtn.classList.add('hidden');
-      loadLessBtn.classList.remove('hidden');
-    });
-
-    loadLessBtn.addEventListener('click', function () {
-      imageContainer.classList.add('hidden');
-      loadMoreBtn.classList.remove('hidden');
-      loadLessBtn.classList.add('hidden');
-    });
-  </script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
@@ -251,6 +247,8 @@
       once: 'true'
     });
   </script>
+  <script src="main.js"></script>
+
 </body>
 
 </html>
